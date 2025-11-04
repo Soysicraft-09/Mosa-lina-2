@@ -1,0 +1,140 @@
+body {
+  background-color: #bfbfbf;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+nav {
+  background-color: #3d3d3d;
+}
+
+nav a {
+  color: white !important;
+  cursor: pointer;
+}
+
+nav .nav-link.active {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.container-section {
+  margin-top: 40px;
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.active-section {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.power-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.power-item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.power-item img {
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}
+
+.power-item:hover {
+  transform: scale(1.1);
+}
+
+.tooltip-desc {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  width: 180px;
+  font-size: 0.9rem;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.power-item:hover .tooltip-desc {
+  opacity: 1;
+}
+
+.character-img {
+  width: 140px;
+  image-rendering: pixelated;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  color: #555;
+  padding-bottom: 20px;
+}
+
+.mecanicas-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.powers-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+  padding-left: 60px;
+}
+
+.powers-images {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Sección Conócenos */
+.conocenos-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.team-img {
+  width: 120px;
+  border-radius: 50%;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.team-img:hover {
+  transform: scale(1.05);
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}

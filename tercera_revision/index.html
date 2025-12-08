@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jueguín Plataformero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Jueguín Plataformero</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" data-target="presentacion" href="#">Presentación</a></li>
+                    <li class="nav-item"><a class="nav-link" data-target="historia" href="#">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" data-target="personajes" href="#">Personajes</a></li>
+                    <li class="nav-item"><a class="nav-link" data-target="mecanicas" href="#">Mecánicas</a></li>
+                    <li class="nav-item"><a class="nav-link" data-target="conocenos" href="#">Conócenos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="presentacion" class="content-section hero active-content d-flex align-items-center justify-content-between px-5">
+        <div class="text-container">
+            <h1 class="display-4 fw-bold">VIVE EL <span class="resaltado">RETO</span><br>AQUÍ</h1>
+            <p class="lead mt-4">Combina acción y lógica en un mundo minimalista<br>lleno de secretos y mecánicas sorprendentes.</p>
+            <button class="btn-explore mt-4">EXPLORE</button>
+        </div>
+
+        <div class="image-container">
+            <img src="img/personaje.png" alt="Personaje" class="personaje">
+        </div>
+    </section>
+
+    <section id="historia" class="content-section" style="display: none;">
+        <div class="container pt-5">
+            <h2 class="text-center mt-5">📜 Historia del Juego</h2>
+            <p class="text-center lead mt-3">Descubre el origen del desafío que enfrentarás en este mundo lleno de misterios y peligros.</p>
+        </div>
+    </section>
+
+    <section id="personajes" class="content-section" style="display: none;">
+        <div class="container pt-5">
+            <h2 class="text-center mt-5">👤 Nuestros Personajes</h2>
+            <p class="text-center lead mt-3">Conoce a Jorge Ortiz y a los científicos locos detrás de los inventos.</p>
+        </div>
+    </section>
+
+    <section id="mecanicas" class="content-section" style="display: none;">
+        <div class="container pt-5">
+            <h2 class="text-center mt-5">⚙️ Mecánicas de Juego</h2>
+            <p class="text-center lead mt-3">Aprende a usar los extraños poderes que te otorga este laboratorio experimental.</p>
+        </div>
+    </section>
+
+    <section id="conocenos" class="content-section" style="display: none;">
+        <div class="container pt-5">
+            <h2 class="text-center mt-5">👋 Conócenos</h2>
+            <p class="text-center lead mt-3">El pequeño equipo apasionado por el pixel art que creó este juego.</p>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

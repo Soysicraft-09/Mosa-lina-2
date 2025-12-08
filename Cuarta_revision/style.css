@@ -1,0 +1,99 @@
+body {
+    background: radial-gradient(circle at top left, #0a2e35, #0a0a0a);
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo para las secciones de contenido, para que el JS las muestre correctamente */
+.content-section {
+    padding-top: 5rem; /* Espacio para que el contenido no quede bajo la navbar */
+    min-height: 100vh;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.nav-link {
+    color: #bbb !important;
+    margin-left: 1rem;
+    transition: color 0.3s;
+}
+/* Se añade el estilo para la pestaña ACTIVA */
+.nav-link:hover, .nav-link.active { 
+    color: white !important;
+}
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-container {
+    max-width: 40%;
+}
+
+.resaltado {
+    color: #00b8b8;
+}
+
+.lead {
+    font-weight: 300;
+    color: #d0d0d0;
+}
+
+.btn-explore {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.btn-explore:hover {
+    background-color: #00b8b8;
+    border-color: #00b8b8;
+    color: #000;
+}
+
+/* Imagen del personaje */
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #151515;
+    border-radius: 30px;
+    width: 45%;
+    height: 70vh;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+}
+
+.personaje {
+    width: 80%;
+    image-rendering: pixelated;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-container {
+        max-width: 90%;
+    }
+    .image-container {
+        width: 80%;
+        height: auto;
+        margin-top: 2rem;
+    }
+}
